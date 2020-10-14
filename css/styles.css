@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/natural-default-pattern.png);
+}
+
+#container{
+  width: 1000px;
+  margin: auto;
+}
+
+.float-left{
+  float: left;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+/* sezione header */
+header{
+  position: relative;
+  color: white;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+.header-top{
+  height: 380px;
+  border: 10px solid white;
+  background-image: url(../img/natural-default-header.jpg);
+  background-size: cover;
+}
+
+.header-top h1{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.header-logo{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-logo img{
+  width: 50%;
+}
+
+/* sezione navbar */
+nav{
+  width: 100%;
+  height: 44px;
+  background: #504741;
+  border: 1px solid rgba(0,0,0,.25);
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+.menu li{
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 44px;
+}
+
+.menu li a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0 5px;
+}
+
+.menu li:hover{
+  background: lightgrey;
+}
+
+.menu li a:hover{
+  text-decoration: underline;
+}
+
+/* sezione main */
+
+main::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.col-left, .col-right{
+  width: 20%;
+}
+
+.rounded-box{
+  border-radius: 5px;
+  background: white;
+  padding: 5px;
+}
+
+/* sezione col sinistra */
+.col-header::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.col-left i{
+    padding-right: 10px;
+    font-size: 30px;
+    color: orange;
+}
+
+.col-left h2{
+  width: 80%;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+
+.link{
+  padding:5px;
+}
+
+.link a{
+
+  text-decoration: none;
+  color: green;
+  font-family: 'Roboto', sans-serif;
+  font-size: 800;
+}
+
+/* sezione col centrale */
+.col-center{
+  width: 50%;
+  margin: 0 5%;
+  padding: 20px;
+}
+
+.col-center h2, .col-right h2{
+  padding-bottom: 1.5em;
+}
+
+.col-center p, .col-right p{
+  line-height: 1.5em;
+}
+
+.col-center h2{
+  text-shadow: 0px 2px 2px;
+  text-transform: uppercase;
+}
+
+/* sezione col destra */
+.widget{
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* sezione footer */
+footer{
+  margin-top: 20px;
+}
+
+.footer p{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: bold;
+  color: lightgrey;
+  font-style: italic;
+}
+
+.footer hr{
+  border-style: inset;
+}
+
+.social::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.badge{
+  width: 33.3%;
+  padding: 25px;
+  text-align: center;
+  font-size: 50px;
+  color: lightgrey;
+}
+
+.badge:hover{
+  color: black;
+}
+
+.badge i:hover{
+  cursor: pointer;
+}
